@@ -24,7 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 env = environ.Env()
 environ.Env.read_env()
 
-SECRET_KEY = env('SECRET_KEY')
+SECRET_KEY = "django-insecure-e2(s3#ohi&2w+__m^^mobl50*7(%y08#&8t7l!@2ex6^#h7^s3"
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -81,11 +81,11 @@ WSGI_APPLICATION = 'ticker.wsgi.application'
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.postgresql",
-        "NAME": env('NAME'),
-        "USER": env('USER'),
-        "PASSWORD": env('PASSWORD'),
-        "HOST": env('HOST'),
-        "PORT": env('PORT'),
+        "NAME": "db",
+        "USER": "postgres",
+        "PASSWORD": "postgres",
+        "HOST": "localhost",
+        "PORT": "5432",
        
     }
 }
